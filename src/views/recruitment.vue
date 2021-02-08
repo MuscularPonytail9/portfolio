@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <txtimg name="Recruitment" source="recruitment.jpg" ></txtimg>
+    </div>
+</template>
+
+<script>
+import txtimg from '@/components/txtimg'
+export default {
+  components: {
+    txtimg
+  },
+}
+</script>
+
+<style>
+
+</style>
