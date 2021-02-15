@@ -31,9 +31,9 @@
             </v-list>
         </v-card>
         </v-col>
-            <!-- <v-img :src=source>
+            <v-img :src="require(`@/assets/images/${source}`)">
 
-            </v-img> -->
+            </v-img>
         <v-col>
         </v-col>     
       </v-row>
@@ -44,7 +44,7 @@
 <script>
   export default {
     data: () => ({
-      source: "@/assets/images/aurora.jpg",
+      source: 'aurora.jpg',
       items: [
         { text: 'Real-Time', icon: 'mdi-clock' },
         { text: 'Audience', icon: 'mdi-account' },
@@ -53,13 +53,13 @@
     }),
     methods: {
         setSrc1() {
-            this.source="@/assets/images/aurora.jpg"
+            this.source="aurora.jpg"
         },
         setSrc2() {
-            this.source="@/assets/images/building.jpg"
+            this.source="building.jpg"
         },
         setSrc3() {
-            this.source="@/assets/images/company.jpg"
+            this.source="company.jpg"
         },
     }
   }
