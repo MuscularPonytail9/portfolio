@@ -237,11 +237,91 @@
               </v-col>
             </v-row>
         </v-card>
-        <v-card id="offset1" tile flat width="100%" height="800"></v-card>
-        <v-card id="offset2" tile flat width="100%" height="800" color="grey lighten-4"></v-card>
-        <v-card id="offset3" tile flat width="100%" height="800"></v-card>
-        <v-card id="offset4" tile flat width="100%" height="800" color="grey lighten-4"></v-card>
-        <v-card id="offset5" tile flat width="100%" height="800"></v-card>
+        <v-card id="offset1" tile flat width="100%" height="800">
+          <v-img src="@/assets/images/building.jpg" height="600">
+            <v-row>
+              <v-card height="350" color="transparent"></v-card>
+            </v-row>
+            <v-row>
+              <v-col offset="4">
+                <v-card flat tile height="250">
+                  asdf
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+        </v-card>
+        <v-card tile flat width="100%" height="800" color="grey lighten-4">
+
+        </v-card>
+        <v-card id="offset2" tile flat width="100%" height="800">
+          <v-img src="@/assets/images/building.jpg" height="600">
+            <v-row>
+              <v-card height="350" color="transparent"></v-card>
+            </v-row>
+            <v-row>
+              <v-col offset="4">
+                <v-card flat tile height="250">
+                  asdf
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+        </v-card>
+        <v-card tile flat width="100%" height="800" color="grey lighten-4">
+
+        </v-card>
+        <v-card id="offset3" tile flat width="100%" height="800">
+          <v-img src="@/assets/images/building.jpg" height="600">
+            <v-row>
+              <v-card height="350" color="transparent"></v-card>
+            </v-row>
+            <v-row>
+              <v-col offset="4">
+                <v-card flat tile height="250">
+                  asdf
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+        </v-card>
+        <v-card tile flat width="100%" height="800" color="grey lighten-4">
+
+        </v-card>
+        <v-card id="offset4" tile flat width="100%" height="800">
+          <v-img src="@/assets/images/building.jpg" height="600">
+            <v-row>
+              <v-card height="350" color="transparent"></v-card>
+            </v-row>
+            <v-row>
+              <v-col offset="4">
+                <v-card flat tile height="250">
+                  asdf
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+        </v-card>
+        <v-card tile flat width="100%" height="800" color="grey lighten-4">
+
+        </v-card>
+        <v-card id="offset5" tile flat width="100%" height="800">
+          <v-img src="@/assets/images/building.jpg" height="600">
+            <v-row>
+              <v-card height="350" color="transparent"></v-card>
+            </v-row>
+            <v-row>
+              <v-col offset="4">
+                <v-card flat tile height="250">
+                  asdf
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+        </v-card>
+        <v-card tile flat width="100%" height="800" color="grey lighten-4">
+
+        </v-card>
     </div>
 </template>
 

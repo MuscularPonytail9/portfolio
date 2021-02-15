@@ -10,6 +10,7 @@
     <HomecontentLeft id="row4" source="hc2-2.jpg"/>
     <HomecontentRight id="row5" source="hc2-1.jpg"/>
     <HomecontentLeft id="row6" source="hc2-2.jpg"/>
+    <solutionInfo/>
     <br>
     <br>
     <Homecards/>
@@ -23,6 +24,7 @@ import Homecards from '@/components/homecards'
 import Homecontent from '@/components/homecontent'
 import HomecontentRight from '@/components/homecontentRight'
 import HomecontentLeft from '@/components/homecontentLeft'
+import solutionInfo from '@/components/solutionInfo'
 
 export default {
   components: {
@@ -30,7 +32,8 @@ export default {
     Homecards,
     Homecontent,
     HomecontentRight,
-    HomecontentLeft
+    HomecontentLeft,
+    solutionInfo
   }
 }
 </script>
