@@ -1,9 +1,12 @@
 <template>
-      <v-app-bar dense app flat hide-on-scroll height="50">
+      <v-app-bar dense app flat hide-on-scroll height="50" id="navbar">
         <v-spacer></v-spacer>
           <v-toolbar-title>
-              <v-btn to='/'>
-                  Broanex
+              <v-btn elevation="0" to='/'>
+                  <v-img src="@/assets/images/bnx1.png" width="25px" height="34px"></v-img>
+                  <div style="color: darkgrey;">
+                    broanex
+                  </div>                
               </v-btn>
           </v-toolbar-title>
           <v-spacer></v-spacer>
@@ -28,6 +31,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+#navbar {
+    font-family: 'Montserrat', sans-serif;
+}
 </style>
