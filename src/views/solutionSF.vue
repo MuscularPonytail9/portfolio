@@ -211,8 +211,8 @@
             </v-row>
             <v-row>
               <v-col offset="4">
-                <v-card flat tile height="250">
-                  조민구
+                <v-card flat tile height="250" style="font-weight: bold; font-size: 30px">
+                  MES
                 </v-card>
               </v-col>
             </v-row>
@@ -228,8 +228,8 @@
             </v-row>
             <v-row>
               <v-col offset="4">
-                <v-card flat tile height="250">
-                  asdf
+                <v-card flat tile height="250" style="font-weight: bold; font-size: 30px">
+                  ERP
                 </v-card>
               </v-col>
             </v-row>
@@ -245,8 +245,8 @@
             </v-row>
             <v-row>
               <v-col offset="4">
-                <v-card flat tile height="250">
-                  asdf
+                <v-card flat tile height="250" style="font-weight: bold; font-size: 30px">
+                  PDM
                 </v-card>
               </v-col>
             </v-row>
@@ -262,8 +262,8 @@
             </v-row>
             <v-row>
               <v-col offset="4">
-                <v-card flat tile height="250">
-                  asdf
+                <v-card flat tile height="250" style="font-weight: bold; font-size: 30px">
+                  HMI
                 </v-card>
               </v-col>
             </v-row>
