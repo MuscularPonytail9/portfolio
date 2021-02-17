@@ -8,11 +8,16 @@
       >
         <v-row
         >
-          <v-card color="transparent" tile flat height="150"></v-card>        
+          <v-card color="transparent" tile flat height="300"></v-card>        
         </v-row>
         <v-row>
-          <v-col offset="3">
-            <h1>{{ item.txt }}</h1>
+          <v-col cols="12">
+            <v-card flat tile color="transparent" class="text-center">
+              <v-card-text>
+                <div style="font-size: 50px;">{{ item.title }}</div><br>
+                <div style="font-size: 18px;">{{ item.txt }}</div>
+              </v-card-text>
+            </v-card>
           </v-col>
         </v-row>
       </v-carousel-item>
@@ -27,16 +32,18 @@ export default {
         items: [
           {
             src: require('@/assets/images/time.jpg'),
-            txt: 'Jola Expensive Watch'
+            title: 'Magic & Smart Factory',
+            txt: '기술의 한계를 넘어, 고객의 비전을 현실로',
           },
           {
             src: require('@/assets/images/aurora.jpg'),
-            txt: 'Gae Beautiful Sky'
+            title: 'Technology',
+            txt: '고객의 가치를 최우선으로 하는 회사'
           },
-          {
-            src: require('@/assets/images/building.jpg'),
-            txt: 'Geonmooljoo, I envy you'
-          }
+          // {
+          //   src: require('@/assets/images/building.jpg'),
+          //   txt: 'Geonmooljoo, I envy you'
+          // }
         ]
       }
     }

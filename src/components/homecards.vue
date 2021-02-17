@@ -5,12 +5,12 @@
     <v-row>
         <v-col cols='6' v-for="item in items" :key="item.id">
     <v-hover v-slot:default="{ hover }">
+    <router-link :to="item.link">
     <v-card
     class="mx-auto my-12"
     max-width="430"
     flat
     >
-    <router-link :to="item.link">
       <v-img
         height="300"
         :src= "item.src"
@@ -25,7 +25,7 @@
         </v-expand-transition>
       </v-img>
       
-    </router-link>
+    
     <v-card-title>
           {{ item.title }}     
       </v-card-title>
@@ -44,6 +44,7 @@
       <div>{{ item.txt }}</div>
     </v-card-text>
     </v-card>
+    </router-link>
     </v-hover>
     
         </v-col>
@@ -61,29 +62,17 @@ export default {
             {
                 id: 1,
                 title: "Smart Factory",
-                txt: "Kimchi, Bossam - Stunning Combination",
+                txt: "More",
                 src: "https://cdn.vuetifyjs.com/images/cards/cooking.png",
                 link: "/solutionSF"
             },
             {
                 id: 2,
                 title: "RPA",
-                txt: "Kimchi, Bossam - Stunning Combination",
+                txt: "More",
                 src: "https://cdn.vuetifyjs.com/images/cards/cooking.png",
                 link: "solutionRPA"
             },
-            // {
-            //     id: 3,
-            //     title: "Delicious Jjam-bab",
-            //     txt: "Kimchi, Bossam - Stunning Combination",
-            //     src: "https://cdn.vuetifyjs.com/images/cards/cooking.png"
-            // },
-            // {
-            //     id: 4,
-            //     title: "Delicious Jjam-bab",
-            //     txt: "Kimchi, Bossam - Stunning Combination",
-            //     src: "https://cdn.vuetifyjs.com/images/cards/cooking.png"
-            // },
         ]
         }
     }

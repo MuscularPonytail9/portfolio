@@ -3,12 +3,11 @@
     <v-container>
       <v-row>
         <v-col cols="3">
-        <v-card
+          <v-card
             class="mx-auto"
             max-width="300"
-            tile
             flat
-        >
+          >
             <v-list dense>
             <v-subheader>기능</v-subheader>
             <v-list-item-group>
@@ -29,12 +28,17 @@
                 </v-list-item>
             </v-list-item-group>
             </v-list>
-        </v-card>
+          </v-card>
         </v-col>
+        <v-col cols="6">
             <v-img :src="require(`@/assets/images/${source}`)">
 
             </v-img>
-        <v-col>
+        </v-col>
+        <v-col cols="3">
+            <v-card>
+              {{ txt }}
+            </v-card>
         </v-col>     
       </v-row>
     </v-container>
@@ -45,21 +49,34 @@
   export default {
     data: () => ({
       source: 'aurora.jpg',
-      items: [
-        { text: 'Real-Time', icon: 'mdi-clock' },
-        { text: 'Audience', icon: 'mdi-account' },
-        { text: 'Conversions', icon: 'mdi-flag' },
-      ],
+      txt: "기준관리",
+      Info: [
+        {
+          id: 1,
+          text: "기준관리"
+        },
+        {
+          id: 2,
+          text: "영업관리"
+        },
+        {
+          id: 3,
+          text: "구매관리"
+        }
+      ]
     }),
     methods: {
         setSrc1() {
             this.source="aurora.jpg"
+            this.txt = this.Info[0].text
         },
         setSrc2() {
             this.source="building.jpg"
+            this.txt = this.Info[1].text
         },
         setSrc3() {
             this.source="company.jpg"
+            this.txt = this.Info[2].text
         },
     }
   }
