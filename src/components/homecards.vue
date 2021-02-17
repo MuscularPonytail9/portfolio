@@ -13,7 +13,7 @@
     >
       <v-img
         height="300"
-        :src= "item.src"
+        :src="require(`@/assets/images/${item.src}`)"
       >
         <v-expand-transition>
           <div
@@ -63,14 +63,14 @@ export default {
                 id: 1,
                 title: "Smart Factory",
                 txt: "More",
-                src: "https://cdn.vuetifyjs.com/images/cards/cooking.png",
+                src: "laser.jpg",
                 link: "/solutionSF"
             },
             {
                 id: 2,
                 title: "RPA",
                 txt: "More",
-                src: "https://cdn.vuetifyjs.com/images/cards/cooking.png",
+                src: "rpa.jpg",
                 link: "solutionRPA"
             },
         ]

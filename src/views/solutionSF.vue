@@ -49,7 +49,7 @@
                         스마트 팩토리 구축으로 손쉬운 제어와 다양한 이점을 얻으세요<br>
                       </div>
                       <v-card tile flat height="60" color="transparent"></v-card>
-                      <v-img src="@/assets/images/hc1.jpg" height="400"></v-img>
+                      <v-img src="@/assets/images/s1.jpg" height="400"></v-img>
                   </v-card>
               </v-col>
             </v-row>
@@ -85,23 +85,23 @@
         <br><br><br><br><br><br>
         
           <v-col offset="2">
-            <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 230px' width="900" height="450" id="offset1">
+            <v-img src="@/assets/images/s2.jpg" position='bottom 50px right 230px' width="1100" height="600" id="offset1">
               <v-row>
-                <v-card color="transparent" flat tile height="120px"></v-card>
+                <v-card color="transparent" flat tile height="220px"></v-card>
               </v-row>
-              <v-row>
-                <v-col offset="6" cols="3"></v-col>  
+              <v-row no-gutters>
+                <v-col offset="7" cols="3"></v-col>  
                 <v-col>
-                  <v-card flat tile height="100px">
-                    <div class="grey--text" style="font-size: 90px;">01</div>
+                  <v-card flat tile height="160px">
+                    <div class="grey--text" style="font-size: 110px;">01</div>
                   </v-card>
                 </v-col>         
               </v-row>
               <v-row>
                 <v-col offset="6">
-                  <v-card flat tile height="160px">
-                    <div style="font-size: 24px">MES<br></div>
-                    <div style="font-size: 17px">MES는 제품 생산 과정을 최적화할 수 있도록 정보를 제공하며, 실시간 데이터로 공장활동을 지시 및 보고하여 의사결정에 도움을 주는 시스템입니다.</div>
+                  <v-card flat tile height="160px"><v-card flat tile height="20px"></v-card>
+                    <div style="font-size: 24px" class="ml-12">MES<br></div>
+                    <div style="font-size: 17px" class="ml-12">MES는 제품 생산 과정을 최적화할 수 있도록 정보를 제공하며, 실시간 데이터로 공장활동을 지시 및 보고하여 의사결정에 도움을 주는 시스템입니다.</div>
                   </v-card>
                 </v-col>
               </v-row>
@@ -113,87 +113,97 @@
 
 
           <v-row>
-            <v-col cols="2"></v-col>
-              <v-col cols="1">
-                <v-card flat tile height="100px">
-                  <div class="grey--text ml-4" style="font-size: 90px;">02</div>
+            <v-col cols="1"></v-col>
+              <v-col cols="2">
+                <v-card flat tile height="160px" class="ml-16">
+                  <div class="grey--text ml-16" style="font-size: 110px;">02</div>
                 </v-card>
               </v-col>
             <v-col>
-              <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 180px' width="900" height="450" id="offset2">
+              <v-img src="@/assets/images/s3.jpg" eager position='bottom 50px right 180px' width="1100" height="600" id="offset2">
                 <v-row>
                   <v-card color="transparent" flat tile height="100px"></v-card>
                 </v-row>
                 <v-row>
                   <v-col offset="6" cols="3"></v-col>  
                   <v-col>
-                    <v-card color="transparent" flat tile height="130px">
+                    <v-card color="transparent" flat tile height="280px">
                     </v-card>
                   </v-col>         
                 </v-row>
                 <v-row>
                   <v-col offset="4">
-                    <v-card flat tile height="150px">
-                      <div style="font-size: 24px">ERP<br></div>
-                      <div style="font-size: 17px">조직들이 회계, 조달, 프로젝트 관리 및 제조등 일상 업무 활동을 관리하기 위해 사용하는 시스템 및 소프트웨어 패키지를 의미합니다.</div>
+                    <v-card flat tile height="150px"><v-card flat tile height="20px"></v-card>
+                      <div style="font-size: 24px" class="ml-12">ERP<br></div>
+                      <div style="font-size: 17px" class="ml-12">조직들이 회계, 조달, 프로젝트 관리 및 제조등 일상 업무 활동을 관리하기 위해 사용하는 시스템 및 소프트웨어 패키지를 의미합니다.</div>
                     </v-card>
                   </v-col>
                 </v-row>
               </v-img>
             </v-col>
-          </v-row>      
+          </v-row>
+
+
+
+          
+                
           <v-col offset="3">
-            <v-img src="@/assets/images/hc1.jpg" position='bottom 50px left 180px' width="900" height="450" id="offset3">
+            <v-img src="@/assets/images/s4.jpg" position='bottom 50px left 180px' width="1100" height="600" id="offset3">
               <v-row>
-                <v-card color="transparent" flat tile height="70px"></v-card>
+                <v-card color="transparent" flat tile height="140px"></v-card>
               </v-row>
               <v-row>
                 <v-col>
-                  <v-card flat tile height="70px" width="170" class="mb-10">
-                    <div class="grey--text ml-4" style="font-size: 90px;">03</div>
+                  <v-card flat tile height="90px" width="170" class="mb-10">
+                    <div class="grey--text ml-4" style="font-size: 110px;">03</div>
                   </v-card>
                 </v-col>
               </v-row>
               <v-row>
                 <v-col>
-                  <v-card flat tile width="260px" height="300px" class="ml-5">
-                    <div style="font-size: 24px">PDM<br></div>
-                    <div style="font-size: 17px">소프트웨어를 사용하여 제품 데이터 및 프로세스 관련 정보를 단일한 중앙 시스템에서 관리하는 것입니다.</div>
+                  <v-card flat tile width="290px" height="300px" class="ml-5"><v-card flat tile height="20px"></v-card>
+                    <div style="font-size: 24px" class="mr-12">PDM<br></div>
+                    <div style="font-size: 17px" class="mr-12">소프트웨어를 사용하여 제품 데이터 및 프로세스 관련 정보를 단일한 중앙 시스템에서 관리하는 것입니다.</div>
                   </v-card>
                 </v-col>               
               </v-row>
             </v-img>
           </v-col>
-        <v-row>
-            <v-col cols="2"></v-col>
-              <v-col cols="1">
-                <v-card flat tile height="100px">
-                  <div class="grey--text ml-4" style="font-size: 90px;">04</div>
+
+
+
+
+
+          <v-row>
+            <v-col cols="1"></v-col>
+              <v-col cols="2">
+                <v-card flat tile height="160px" class="ml-16">
+                  <div class="grey--text ml-16" style="font-size: 110px;">04</div>
                 </v-card>
               </v-col>
             <v-col>
-              <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 180px' width="900" height="450" id="offset4">
+              <v-img src="@/assets/images/s5.jpg" position='bottom 50px right 180px' width="1100" height="600" id="offset4">
                 <v-row>
                   <v-card color="transparent" flat tile height="100px"></v-card>
                 </v-row>
                 <v-row>
                   <v-col offset="6" cols="3"></v-col>  
                   <v-col>
-                    <v-card color="transparent" flat tile height="130px">
+                    <v-card color="transparent" flat tile height="280px">
                     </v-card>
                   </v-col>         
                 </v-row>
                 <v-row>
                   <v-col offset="4">
-                    <v-card flat tile height="150px">
-                      <div style="font-size: 24px">HMI<br></div>
-                      <div style="font-size: 17px">작업자와 설비 간의 인터페이스를 직관적으로 인지하기 쉽게 제공하며, 다양한 설비로부터의 데이터를 수집/형식화/결합 하여 전체 및 세부 설비의 상태 모니터링 및 이력 관리가 가능합니다.</div>
+                    <v-card flat tile height="150px"><v-card flat tile height="20px"></v-card>
+                      <div style="font-size: 24px" class="ml-12">HMI<br></div>
+                      <div style="font-size: 17px" class="ml-12">작업자와 설비 간의 인터페이스를 직관적으로 인지하기 쉽게 제공하며, 다양한 설비로부터의 데이터를 수집/형식화/결합 하여 전체 및 세부 설비의 상태 모니터링 및 이력 관리가 가능합니다.</div>
                     </v-card>
                   </v-col>
                 </v-row>
               </v-img>
             </v-col>
-          </v-row>      
+          </v-row>       
     </div>
 </template>
 

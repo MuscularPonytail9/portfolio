@@ -5,25 +5,25 @@
       </v-row>
       <v-row>
             <v-col offset="2">
-                <div style="font-size: 36px">
-                  Bronex Introduction<br>
+                <div style="font-size: 40px">
+                  Solution Introduction<br>
                 </div>
                 <v-card flat color="transparent" height="40"></v-card>
             </v-col>
       </v-row>
-        <v-img src="@/assets/images/hc1.jpg" width="91%" height="320">
+        <v-img src="@/assets/images/h1.jpg" width="91%" height="450">
           <v-row>
             <v-col offset="2">
-              <v-card color="transparent" flat tile height="230" width="800%"></v-card>
+              <v-card color="transparent" flat tile height="350" width="800%"></v-card>
             </v-col>
           </v-row>
           <v-row no-gutters>
             <v-col offset="2">   
-              <v-card tile flat height="190" width="100%">
-                  <v-col>
-                      <v-card tile flat class="ml-4">
+              <v-card tile flat height="260" width="100%">
+                  <v-col offset="1">
+                      <v-card tile flat class="ml-13 mt-4">
                         <div style="font-size: 30px">
-                            Smart Factory Solutions
+                            브로넥스의 솔루션을 도입하고 공장을 최적화하세요
                         </div>   
                       </v-card>
                   </v-col>                
@@ -32,7 +32,7 @@
           </v-row>
         </v-img>
       <v-row no-gutters>
-          <v-col offset="2">
+          <v-col offset="3">
               브로넥스가 스마트 팩토리 시장을 이끕니다.
           </v-col>
       </v-row>

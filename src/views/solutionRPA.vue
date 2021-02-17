@@ -53,7 +53,7 @@
                         RPA도입으로 다양한 업무를 자동화하여 효율성과 생산성을 높이세요<br>
                       </div>
                       <v-card tile flat height="60" color="transparent"></v-card>
-                      <v-img src="@/assets/images/hc1.jpg" height="400"></v-img>
+                      <v-img src="@/assets/images/r1.jpg" height="400"></v-img>
                   </v-card>
               </v-col>
             </v-row>
@@ -89,23 +89,23 @@
         <br><br><br><br><br><br>
         
           <v-col offset="2">
-            <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 230px' width="900" height="450" id="offset1">
+            <v-img src="@/assets/images/r2.jpg" position='bottom 50px right 230px' width="1100" height="600" id="offset1">
               <v-row>
-                <v-card color="transparent" flat tile height="120px"></v-card>
+                <v-card color="transparent" flat tile height="220px"></v-card>
               </v-row>
-              <v-row>
-                <v-col offset="6" cols="3"></v-col>  
+              <v-row no-gutters>
+                <v-col offset="7" cols="3"></v-col>  
                 <v-col>
-                  <v-card flat tile height="100px">
-                    <div class="grey--text" style="font-size: 90px;">01</div>
+                  <v-card flat tile height="160px">
+                    <div class="grey--text" style="font-size: 110px;">01</div>
                   </v-card>
                 </v-col>         
               </v-row>
               <v-row>
                 <v-col offset="6">
-                  <v-card flat tile height="160px">
-                    <div style="font-size: 24px">지능형 RPA 솔루션<br></div>
-                    <div style="font-size: 17px">지능형 RPA 솔루션은 기존 RPA기술에 인공지능을 접목하여 보다 복잡한 업무도 자동화할 수 있는 솔루션입니다.</div>
+                  <v-card flat tile height="160px"><v-card flat tile height="20px"></v-card>
+                    <div style="font-size: 24px" class="ml-12">지능형 RPA 솔루션<br></div>
+                    <div style="font-size: 17px" class="ml-12">지능형 RPA 솔루션은 기존 RPA기술에 인공지능을 접목하여 보다 복잡한 업무도 자동화할 수 있는 솔루션입니다.</div>
                   </v-card>
                 </v-col>
               </v-row>
@@ -117,105 +117,120 @@
 
 
           <v-row>
-            <v-col cols="2"></v-col>
-              <v-col cols="1">
-                <v-card flat tile height="100px">
-                  <div class="grey--text ml-4" style="font-size: 90px;">02</div>
+            <v-col cols="1"></v-col>
+              <v-col cols="2">
+                <v-card flat tile height="160px" class="ml-16">
+                  <div class="grey--text ml-16" style="font-size: 110px;">02</div>
                 </v-card>
               </v-col>
             <v-col>
-              <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 180px' width="900" height="450" id="offset2">
+              <v-img src="@/assets/images/r3.jpg" position='bottom 50px right 180px' width="1100" height="600" id="offset2">
                 <v-row>
                   <v-card color="transparent" flat tile height="100px"></v-card>
                 </v-row>
                 <v-row>
                   <v-col offset="6" cols="3"></v-col>  
                   <v-col>
-                    <v-card color="transparent" flat tile height="130px">
+                    <v-card color="transparent" flat tile height="280px">
                     </v-card>
                   </v-col>         
                 </v-row>
                 <v-row>
                   <v-col offset="4">
-                    <v-card flat tile height="150px">
-                      <div style="font-size: 24px">AI 검사 솔루션<br></div>
-                      <div style="font-size: 17px">AI 검사 솔루션은 사람이 수행하던 종이 문서 기반의 검증/정보추출 등의 작업을 인공지능으로 대체하여 많은 건수의 업무를 자동으로 처리할 수 있도록 지원하는 머신러닝 프레임워크입니다.</div>
-                    </v-card>
-                  </v-col>
-                </v-row>
-              </v-img>
-            </v-col>
-          </v-row>      
-          <v-col offset="3">
-            <v-img src="@/assets/images/hc1.jpg" position='bottom 50px left 180px' width="900" height="450" id="offset3">
-              <v-row>
-                <v-card color="transparent" flat tile height="70px"></v-card>
-              </v-row>
-              <v-row>
-                <v-col>
-                  <v-card flat tile height="70px" width="170" class="mb-10">
-                    <div class="grey--text ml-4" style="font-size: 90px;">03</div>
-                  </v-card>
-                </v-col>
-              </v-row>
-              <v-row>
-                <v-col>
-                  <v-card flat tile width="260px" height="300px" class="ml-5">
-                    <div style="font-size: 24px">테스트 자동화 솔루션<br></div>
-                    <div style="font-size: 17px">테스트 자동화 솔루션은 다양한 종류의 장치에서 동작하는 서비스 어플리케이션에 대한 자동 테스트 실행 환경을 제공하는 테스트 자동화 솔루션입니다.</div>
-                  </v-card>
-                </v-col>               
-              </v-row>
-            </v-img>
-          </v-col>
-        <v-row>
-            <v-col cols="2"></v-col>
-              <v-col cols="1">
-                <v-card flat tile height="100px">
-                  <div class="grey--text ml-4" style="font-size: 90px;">04</div>
-                </v-card>
-              </v-col>
-            <v-col>
-              <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 180px' width="900" height="450" id="offset4">
-                <v-row>
-                  <v-card color="transparent" flat tile height="100px"></v-card>
-                </v-row>
-                <v-row>
-                  <v-col offset="6" cols="3"></v-col>  
-                  <v-col>
-                    <v-card color="transparent" flat tile height="130px">
-                    </v-card>
-                  </v-col>         
-                </v-row>
-                <v-row>
-                  <v-col offset="4">
-                    <v-card flat tile height="150px">
-                      <div style="font-size: 24px">환경 구축 솔루션<br></div>
-                      <div style="font-size: 17px">환경 구축 솔루션은 실제 사용자 환경과 유사한 테스트 환경을 구축해 시스템 성능을 진단하고, 검증하는 솔루션 입니다.</div>
+                    <v-card flat tile height="150px"><v-card flat tile height="20px"></v-card>
+                      <div style="font-size: 24px" class="ml-12">AI 검사 솔루션<br></div>
+                      <div style="font-size: 17px" class="ml-12">AI 검사 솔루션은 사람이 수행하던 종이 문서 기반의 검증/정보추출 등의 작업을 인공지능으로 대체하여 많은 건수의 업무를 자동으로 처리할 수 있도록 지원하는 머신러닝 프레임워크입니다.</div>
                     </v-card>
                   </v-col>
                 </v-row>
               </v-img>
             </v-col>
           </v-row>
-          <v-col offset="2">
-            <v-img src="@/assets/images/hc1.jpg" position='bottom 50px right 230px' width="900" height="450" id="offset5">
+
+
+
+
+
+          <v-col offset="3">
+            <v-img src="@/assets/images/r4.jpg" position='bottom 50px left 180px' width="1100" height="600" id="offset3">
               <v-row>
-                <v-card color="transparent" flat tile height="120px"></v-card>
+                <v-card color="transparent" flat tile height="140px"></v-card>
               </v-row>
               <v-row>
-                <v-col offset="6" cols="3"></v-col>  
                 <v-col>
-                  <v-card flat tile height="100px">
-                    <div class="grey--text" style="font-size: 90px;">05</div>
+                  <v-card flat tile height="90px" width="170" class="mb-10">
+                    <div class="grey--text ml-4" style="font-size: 110px;">03</div>
+                  </v-card>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col>
+                  <v-card flat tile width="290px" height="300px" class="ml-5"><v-card flat tile height="20px"></v-card>
+                    <div style="font-size: 24px" class="mr-12">테스트 자동화 솔루션<br></div>
+                    <div style="font-size: 17px" class="mr-12">테스트 자동화 솔루션은 다양한 종류의 장치에서 동작하는 서비스 어플리케이션에 대한 자동 테스트 실행 환경을 제공하는 테스트 자동화 솔루션입니다.</div>
+                  </v-card>
+                </v-col>               
+              </v-row>
+            </v-img>
+          </v-col>
+
+
+
+
+
+          <v-row>
+            <v-col cols="1"></v-col>
+              <v-col cols="2">
+                <v-card flat tile height="160px" class="ml-16">
+                  <div class="grey--text ml-16" style="font-size: 110px;">04</div>
+                </v-card>
+              </v-col>
+            <v-col>
+              <v-img src="@/assets/images/r5.jpg" position='bottom 50px right 180px' width="1100" height="600" id="offset4">
+                <v-row>
+                  <v-card color="transparent" flat tile height="100px"></v-card>
+                </v-row>
+                <v-row>
+                  <v-col offset="6" cols="3"></v-col>  
+                  <v-col>
+                    <v-card color="transparent" flat tile height="280px">
+                    </v-card>
+                  </v-col>         
+                </v-row>
+                <v-row>
+                  <v-col offset="4">
+                    <v-card flat tile height="150px"><v-card flat tile height="20px"></v-card>
+                      <div style="font-size: 24px" class="ml-12">환경 구축 솔루션<br></div>
+                      <div style="font-size: 17px" class="ml-12">환경 구축 솔루션은 실제 사용자 환경과 유사한 테스트 환경을 구축해 시스템 성능을 진단하고, 검증하는 솔루션 입니다.</div>
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </v-img>
+            </v-col>
+          </v-row> 
+
+
+
+
+
+          <v-col offset="2">
+            <v-img src="@/assets/images/r6.jpg" position='bottom 50px right 230px' width="1100" height="600" id="offset5">
+              <v-row>
+                <v-card color="transparent" flat tile height="220px"></v-card>
+              </v-row>
+              <v-row no-gutters>
+                <v-col offset="7" cols="3"></v-col>  
+                <v-col>
+                  <v-card flat tile height="160px">
+                    <div class="grey--text" style="font-size: 110px;">05</div>
                   </v-card>
                 </v-col>         
               </v-row>
               <v-row>
                 <v-col offset="6">
-                  <v-card flat tile height="160px">
-                    <div style="font-size: 24px">서비스 모니터링 솔루션<br></div>
-                    <div style="font-size: 17px">서비스 모니터링 솔루션은 현재 제공되고 있는 서비스를 실시간으로 모니터링하고, 품질을 분석하여 서비스 품질 향상을 도와주는 서비스 모니터링 솔루션입니다.</div>
+                  <v-card flat tile height="160px"><v-card flat tile height="20px"></v-card>
+                    <div style="font-size: 24px" class="ml-12">서비스 모니터링 솔루션<br></div>
+                    <div style="font-size: 17px" class="ml-12">서비스 모니터링 솔루션은 현재 제공되고 있는 서비스를 실시간으로 모니터링하고, 품질을 분석하여 서비스 품질 향상을 도와주는 서비스 모니터링 솔루션입니다.</div>
                   </v-card>
                 </v-col>
               </v-row>

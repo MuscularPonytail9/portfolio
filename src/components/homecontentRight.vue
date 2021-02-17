@@ -1,6 +1,6 @@
 <template>
   <div v-scroll="onScroll">
-      <v-card flat tile width="100%" height="400" :id="id">
+      <v-card flat tile width="100%" height="600" :id="id">
         <v-expand-transition>
           <v-card v-show="expand" flat tile height="100%" width="100%">
           <v-row no-gutters>          
@@ -13,7 +13,7 @@
                 </v-card>
             </v-col>
             <v-col cols="6">
-                <v-img :src="require(`@/assets/images/${source}`)" width="100%" height="400"></v-img>
+                <v-img :src="require(`@/assets/images/${source}`)" width="100%" height="600"></v-img>
             </v-col>
           </v-row>
           </v-card>
@@ -38,7 +38,7 @@ export default {
     },
     methods: {
         onScroll () {
-            if(window.scrollY>this.offset-300) {
+            if(window.scrollY>this.offset-520) {
                 this.expand=true
             } if(window.scrollY<this.offset-600) {
               this.expand=false

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="txtimg">
         <v-img :src="require(`@/assets/images/${source}`)" height="300">
           <v-row>
             <v-card color="transparent" tile flat width="600" height="240"></v-card>                
@@ -45,5 +45,7 @@ export default {
 </script>
 
 <style scoped>
-
+#txtimg {
+  font-family: 'Montserrat', sans-serif;
+}
 </style>

@@ -4,19 +4,53 @@
     <v-content>
       <router-view/>
     </v-content>
-    <v-footer app color="grey lighten-4" absolute>
-      <v-spacer></v-spacer>
-      <div>&copy; {{ new Date().getFullYear() }}</div>
-    </v-footer>
+    <mfooter/>
   </v-app>
 </template>
 
 <script>
 import navbar from '@/components/navbar'
+import mfooter from '@/components/footer'
 export default {
   name: 'App',
   components: {
-    navbar
+    navbar,
+    mfooter
+  },
+  data() {
+    return {
+      links: [
+        {
+          txt: "SMART FACTORY",
+          goto: '/solutionSF'
+        },
+        {
+          txt: "RPA",
+          goto: '/solutionRPA'
+        },
+        {
+          txt: "CLIENTS",
+          goto: '/clients'
+        },
+        {
+          txt: "CONTACT",
+          goto: '/contact'
+        },
+        {
+          txt: "COMPANY",
+          goto: '/company'
+        },
+        {
+          txt: "RECRUITMENT",
+          goto: '/recruitment'
+        },
+      ]
+    }
   }
 };
 </script>
+<style scoped>
+#app {
+  font-family: 'Noto Sans KR';
+}
+</style>
