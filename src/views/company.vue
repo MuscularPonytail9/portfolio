@@ -3,9 +3,9 @@
         <txtimg name="Company" source="company.jpg" ></txtimg>
         <br><br><br>
             <v-row>
-              <v-card color="transparent" tile flat height="0"></v-card>
+              <v-card color="transparent" tile flat height="0" style="margin-top: 10%"></v-card>
             </v-row>
-              <div class="grey lighten-4">
+              <div class="grey lighten-4" style="padding: 0 0 10% 0">
                         <div style="padding:10% 0 3% 0%; font-size:41pt; text-align:center;">우리의 노력이 당신의 힘이 되기에 "The work we love"</div>
             <v-row>
               <v-col offset="3" style="margin-bottom:10%; margin-top:5%;">
@@ -27,38 +27,36 @@
               </v-col>
             </v-row>
               </div>
-<h1 style="font-weight: bold; font-size: 30px; padding:8% 0 0 10%;">사업 연혁</h1>
-<v-card flat  style="background-color:rgba(0,0,0,0)">
+<h1 style="font-weight: bold; font-size: 30px; padding:8% 0 5% 10%;">사업 연혁</h1>
+<v-card flat style="background-color:rgba(0,0,0,0);">
     <v-layout row wrap style="margin-left:12%;">
     <v-card-text class="py-0">
-      <v-card width=10% height=10% style=" padding: 3.5% 0 0 27%" elevation="0">
+      <v-card width=10% height=3% style=" padding: 0 0 0 23%" elevation="0">
       <v-slider
       vertical
       height="600px"
       color="black"
-      style="font-weight: bold;"
+      style="font-weight: bold"
       v-model="model"
       :max="rounded.length-1"
       :tick-labels="rounded"
-      inverse
       background-color="rgba(0,0,0,0)"
     >
     </v-slider></v-card>
 <v-card
-      style="border: 1px solid;"
+      style="border: 1px solid; padding: 1.5%"
       :class="radius"
       class="mx-auto transition-swing"
-      height="500"
       width="30%"
       elevation="0"
     >
-       <div v-if="model===3" style="font-size: 120%; padding: 2% 0% 0 2%;">
+       <div v-if="model===3" style="font-size: 120%;">
       세신기전 반응형 홈페이지 제작 완료<br>
       경남 창조혁신센터 공급기업 선정<br>
       스마트팩토리(공장)추진단 공급업체 선정<br>
       주식회사 브로넥스 창업(04.26)
     </div>
-    <div v-else-if="model===2" style="font-size: 120%; padding: 2% 0 0 2%;">
+    <div v-else-if="model===2" style="font-size: 120%;">
      효림산업 MES 시스템 구축 완료<br>
 삼원기술 모바일 APP 주문 시스템 구축 완료<br>
 한국자동제어 반응형 홈페이지 제작 완료<br>
@@ -66,7 +64,7 @@
 창조혁신센터 공급기업 선정<br>
 경북창조경제혁신센터 공급업체 선정
     </div>
-    <div v-else-if="model===1" style="font-size: 120%; padding: 2% 0 0 2%;">
+    <div v-else-if="model===1" style="font-size: 120%;">
      상미식품 로봇자동화 설비 구축 완료<br>
 영인이엔지 MES 시스템 구축 완료<br>
 도아드림 MES 시스템 구축 완료<br>
@@ -78,7 +76,7 @@
 KPI(폴란드/해외) MES 시스템 구축 완료<br>
 엘파워텍 로봇자동화 설비 구축 완료
     </div>
-    <div v-else-if="model===0" style="font-size: 120%; padding: 2% 0 0 2%;">
+    <div v-else-if="model===0" style="font-size: 120%; padding: 2% 0 2% 2%;">
      (주)엠피코 데이터바우처 우수기업 선정<br>
 데이터바우처 사업 데이터 가공 공급기업 등록<br>
 대중소 상생형 자동차 스마트 공장 공급기업 등록<br>
@@ -115,7 +113,7 @@ KPI(폴란드/해외) MES 시스템 구축 완료<br>
 4861564544385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b4559f35f82ef%3A0xcf45ec35db296972!2z7JiB7Ya
 17JeQ7J207Iqk7ZWY7J207JeU65Oc7YOA7JuM!5e0!3m2!1sko!2skr!4v1612774230431!5m2!1sko!2skr" width="85%" height="600" 
 frameborder="0" style="border:0; padding:0 0 0 15%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <br><br>
+    <div style="margin: 10%"></div>
     </div>
 </template>
 
