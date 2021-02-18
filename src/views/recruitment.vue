@@ -53,7 +53,7 @@
         
   <div style="margin-left: 19%;">
 <v-img :src="require(`@/assets/images/welfare_benefits.png`)" max-width="68%"></v-img></div>
-<br><br>
+    <div style="margin: 10%"></div>
     </div>
 </template>
 
