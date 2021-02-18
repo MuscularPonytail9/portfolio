@@ -8,6 +8,7 @@
       width="130"
       height="100%"
       floating
+      class="hidden-md-and-down"
       >
       <v-list
         nav
@@ -43,9 +44,9 @@
           </v-list-item>
         </v-list-item-group>
       </v-list>
-    </v-navigation-drawer>
-    </div>
-      <v-card color="grey lighten-4" flat tile height="850" id="offset0">
+      </v-navigation-drawer>
+      </div>
+      <v-card color="grey lighten-4" flat tile height="100%" id="offset0">
             <v-row>
               <v-col offset="2" cols="8" class="mt-12">
                   <v-card tile flat width="100%" height="100%" color="transparent" class="mt-12">
@@ -57,7 +58,8 @@
                   </v-card>
               </v-col>
             </v-row>
-            <v-row>
+            <div v-if="$vuetify.breakpoint.mdAndUp==true">
+              <v-row>
               <v-col offset="4" cols="3">
                 <v-card flat tile color="transparent" height="100%" width="100%">
                   <div style="font-size: 24px">번거로운 프로세스 생략<br></div>
@@ -71,24 +73,26 @@
                 </v-card>                
               </v-col>
             </v-row>
-            <!-- <v-row>
-              <v-col offset="4" cols="3">
-                <v-card flat tile color="transparent" height="100%" width="100%">
-                  <div style="font-size: 24px">효율적 원가 절감<br></div>
-                  <div style="font-size: 17px">원가 집계 및 분석으로 원가를 최적화할 수 있습니다. 또한 공정 소요시간과 불량 개선을 통해서 제조원가 경쟁력을 확보합니다.</div>
-                </v-card>
+            </div>            
+            <div v-if="$vuetify.breakpoint.mdAndUp==false">
+              <v-col offset="2" cols="8">
+                <v-card flat tile color="transparent">
+                <div style="font-size: 24px">번거로운 프로세스 생략<br></div>
+                  <div style="font-size: 17px">업무들을 알고리즘화 및 자동화함으로써 업무 시간을 단축합니다.</div>
+              </v-card>
               </v-col>
-              <v-col cols="3">
-                <v-card flat tile color="transparent" height="100%" width="100%">
-                  <div style="font-size: 24px">신뢰성 있는 성과<br></div>
-                  <div style="font-size: 17px">고객 만족도(품질, 납기) 및 신뢰도 향상에 도움을 주며 공장을 실시간으로 분석하여 맞춤 계획을 수립할 수 있습니다.</div>
-                </v-card> 
+              <v-col offset="2" cols="8">
+                <v-card flat tile color="transparent">
+                <div style="font-size: 24px">오류 제로화<br></div>
+                  <div style="font-size: 17px">사람이 하던 기존 업무를 오류 없이 훨씬 빠른 속도로 수행하여 생산성을 높입니다.</div>
+              </v-card>
               </v-col>
-            </v-row> -->
+            </div>
         </v-card>
         <br><br><br><br><br><br>
         
-          <v-col offset="2">
+        <div v-if="$vuetify.breakpoint.mdAndUp==true">
+          <v-col offset="1" cols="10">
             <v-img src="@/assets/images/r2.jpg" position='bottom 50px right 230px' width="1100" height="600" id="offset1">
               <v-row>
                 <v-card color="transparent" flat tile height="220px"></v-card>
@@ -112,19 +116,17 @@
             </v-img>
           </v-col>
 
+          <v-col offset="2" cols="8">
+            <v-img src="@/assets/images/jnhrpa.png"></v-img>
+          </v-col>
 
           <br><br><br>
-
-
-          <v-row>
-            <v-col cols="1"></v-col>
-              <v-col cols="2">
-                <v-card flat tile height="160px" class="ml-16">
-                  <div class="grey--text ml-16" style="font-size: 110px;">02</div>
+    
+            <v-col offset="2">
+              <v-card flat tile height="160px" class="ml-16">
+                  <div class="grey--text mr-4" style="font-size: 110px;">02</div>
                 </v-card>
-              </v-col>
-            <v-col>
-              <v-img src="@/assets/images/r3.jpg" position='bottom 50px right 180px' width="1100" height="600" id="offset2">
+              <v-img src="@/assets/images/r3.jpg" eager position='bottom 50px right 180px' width="1100" height="600" id="offset2">
                 <v-row>
                   <v-card color="transparent" flat tile height="100px"></v-card>
                 </v-row>
@@ -137,7 +139,7 @@
                 </v-row>
                 <v-row>
                   <v-col offset="4">
-                    <v-card flat tile height="150px"><v-card flat tile height="20px"></v-card>
+                    <v-card flat tile width="76%" height="150px"><v-card flat tile width="100%" height="20px"></v-card>
                       <div style="font-size: 24px" class="ml-12">AI 검사 솔루션<br></div>
                       <div style="font-size: 17px" class="ml-12">AI 검사 솔루션은 사람이 수행하던 종이 문서 기반의 검증/정보추출 등의 작업을 인공지능으로 대체하여 많은 건수의 업무를 자동으로 처리할 수 있도록 지원하는 머신러닝 프레임워크입니다.</div>
                     </v-card>
@@ -145,12 +147,13 @@
                 </v-row>
               </v-img>
             </v-col>
-          </v-row>
 
+            <v-col offset="3" cols="6">
+            <v-img src="@/assets/images/aigs.png"></v-img>
+          </v-col>
 
-
-
-
+          <br><br><br>
+                
           <v-col offset="3">
             <v-img src="@/assets/images/r4.jpg" position='bottom 50px left 180px' width="1100" height="600" id="offset3">
               <v-row>
@@ -174,19 +177,17 @@
             </v-img>
           </v-col>
 
+          <v-col offset="3" cols="6">
+            <v-img src="@/assets/images/tstjdh.png"></v-img>
+          </v-col>
 
+          <br><br><br>
 
-
-
-          <v-row>
-            <v-col cols="1"></v-col>
-              <v-col cols="2">
-                <v-card flat tile height="160px" class="ml-16">
-                  <div class="grey--text ml-16" style="font-size: 110px;">04</div>
+          <v-col offset="2">
+              <v-card flat tile height="160px" class="ml-16">
+                  <div class="grey--text mr-4" style="font-size: 110px;">04</div>
                 </v-card>
-              </v-col>
-            <v-col>
-              <v-img src="@/assets/images/r5.jpg" position='bottom 50px right 180px' width="1100" height="600" id="offset4">
+              <v-img src="@/assets/images/r5.jpg" eager position='bottom 50px right 180px' width="1100" height="600" id="offset4">
                 <v-row>
                   <v-card color="transparent" flat tile height="100px"></v-card>
                 </v-row>
@@ -199,7 +200,7 @@
                 </v-row>
                 <v-row>
                   <v-col offset="4">
-                    <v-card flat tile height="150px"><v-card flat tile height="20px"></v-card>
+                    <v-card flat tile width="76%" height="150px"><v-card flat tile width="100%" height="20px"></v-card>
                       <div style="font-size: 24px" class="ml-12">환경 구축 솔루션<br></div>
                       <div style="font-size: 17px" class="ml-12">환경 구축 솔루션은 실제 사용자 환경과 유사한 테스트 환경을 구축해 시스템 성능을 진단하고, 검증하는 솔루션 입니다.</div>
                     </v-card>
@@ -207,13 +208,8 @@
                 </v-row>
               </v-img>
             </v-col>
-          </v-row> 
-
-
-
-
-
-          <v-col offset="2">
+            <br><br><br><br><br>
+            <v-col offset="1" cols="10">
             <v-img src="@/assets/images/r6.jpg" position='bottom 50px right 230px' width="1100" height="600" id="offset5">
               <v-row>
                 <v-card color="transparent" flat tile height="220px"></v-card>
@@ -235,7 +231,75 @@
                 </v-col>
               </v-row>
             </v-img>
-          </v-col>      
+          </v-col>
+        </div>
+        <div v-if="$vuetify.breakpoint.mdAndUp==false">
+          <v-img src="@/assets/images/r2.jpg" aspect-ratio="1.7778" class="d-flex align-end">
+            <v-row no-gutters>
+              <v-col offset="1">
+                <v-card flat tile width="100%" height="40px"></v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+          <v-col offset="1">
+            <v-card flat tile class="mr-16">
+               <div style="font-size: 24px" class="ml-4">지능형 RPA 솔루션<br></div>
+                    <div style="font-size: 17px" class="ml-4">지능형 RPA 솔루션은 기존 RPA기술에 인공지능을 접목하여 보다 복잡한 업무도 자동화할 수 있는 솔루션입니다.</div>
+            </v-card>
+          </v-col>
+          <v-img src="@/assets/images/r3.jpg" aspect-ratio="1.7778" class="d-flex align-end">
+            <v-row no-gutters>
+              <v-col offset="1">
+                <v-card flat tile width="100%" height="40px"></v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+          <v-col offset="1">
+            <v-card flat tile class="mr-16">
+              <div style="font-size: 24px" class="ml-4">AI 검사 솔루션<br></div>
+              <div style="font-size: 17px" class="ml-4">AI 검사 솔루션은 사람이 수행하던 종이 문서 기반의 검증/정보추출 등의 작업을 인공지능으로 대체하여 많은 건수의 업무를 자동으로 처리할 수 있도록 지원하는 머신러닝 프레임워크입니다.</div>
+            </v-card>
+          </v-col>
+          <v-img src="@/assets/images/r4.jpg" aspect-ratio="1.7778" class="d-flex align-end">
+            <v-row no-gutters>
+              <v-col offset="1">
+                <v-card flat tile width="100%" height="40px"></v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+          <v-col offset="1">
+            <v-card flat tile class="mr-16">
+              <div style="font-size: 24px" class="ml-4">테스트 자동화 솔루션<br></div>
+              <div style="font-size: 17px" class="ml-4">테스트 자동화 솔루션은 다양한 종류의 장치에서 동작하는 서비스 어플리케이션에 대한 자동 테스트 실행 환경을 제공하는 테스트 자동화 솔루션입니다.</div>
+            </v-card>
+          </v-col>
+          <v-img src="@/assets/images/r5.jpg" aspect-ratio="1.7778" class="d-flex align-end">
+            <v-row no-gutters>
+              <v-col offset="1">
+                <v-card flat tile width="100%" height="40px"></v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+          <v-col offset="1">
+            <v-card flat tile class="mr-16">
+              <div style="font-size: 24px" class="ml-4">환경 구축 솔루션<br></div>
+              <div style="font-size: 17px" class="ml-4">환경 구축 솔루션은 실제 사용자 환경과 유사한 테스트 환경을 구축해 시스템 성능을 진단하고, 검증하는 솔루션 입니다.</div>
+            </v-card>
+          </v-col>
+          <v-img src="@/assets/images/r6.jpg" aspect-ratio="1.7778" class="d-flex align-end">
+            <v-row no-gutters>
+              <v-col offset="1">
+                <v-card flat tile width="100%" height="40px"></v-card>
+              </v-col>
+            </v-row>
+          </v-img>
+          <v-col offset="1">
+            <v-card flat tile class="mr-16">
+              <div style="font-size: 24px" class="ml-4">서비스 모니터링 솔루션<br></div>
+              <div style="font-size: 17px" class="ml-4">서비스 모니터링 솔루션은 현재 제공되고 있는 서비스를 실시간으로 모니터링하고, 품질을 분석하여 서비스 품질 향상을 도와주는 서비스 모니터링 솔루션입니다.</div>
+            </v-card>
+          </v-col>
+        </div>
     </div>
 </template>
 
@@ -249,37 +313,16 @@ export default {
     return {
       drawer: false,
       cardexpand: false,
-      offsets: {
-        offset1: 0,
-        offset2: 0,
-        offset3: 0,
-        offset4: 0,
-      },
-      expands: {
-        expand1: true,
-        expand2: false,
-        expand3: false,
-        expand4: false
-      }
     }
   },
   methods: {
     onScroll () {
-            if(window.scrollY>400) {
+            if(window.scrollY>400 && ((this.$vuetify.breakpoint.name == "xl") || (this.$vuetify.breakpoint.name == "lg"))) {
                 this.drawer=true
             } else {
               this.drawer=false
             }
             
-    },
-    rowYpos () {
-      console.log(1)
-      for(var i = 0; i < 4; i++) {
-            var target = document.getElementById(`offset${i}`)
-            var abTop = window.pageYOffset + target.getBoundingClientRect().top
-            this.offsets[i] = abTop
-            console.log(this.offsets[i])
-      }      
     },
     setExpand() {
       this.cardexpand=true
@@ -287,11 +330,14 @@ export default {
   },
   mounted() {
         setTimeout(this.setExpand, 400)
-        this.rowYpos()
     }
 }
 </script>
 
 <style>
-
+.nav {
+  position: sticky;
+  top: 170px;
+  z-index: 99999;
+}
 </style>
