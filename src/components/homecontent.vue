@@ -6,7 +6,7 @@
       <v-row>
             <v-col offset="2">
                 <div style="font-size: 40px">
-                  Solution Introduction<br>
+                  솔루션 소개<br>
                 </div>
                 <v-card flat color="transparent" height="40"></v-card>
             </v-col>
@@ -22,9 +22,10 @@
               <v-card tile flat height="260" width="100%">
                   <v-col offset="1">
                       <v-card tile flat class="ml-13 mt-4">
-                        <div style="font-size: 30px">
+                        <div style="font-size: 30px" v-if="$vuetify.breakpoint.mdAndUp==true">
                             브로넥스의 솔루션을 도입하고 공장을 최적화하세요
-                        </div>   
+                        </div>
+
                       </v-card>
                   </v-col>                
               </v-card>
@@ -33,7 +34,12 @@
         </v-img>
       <v-row no-gutters>
           <v-col offset="3">
+            <div v-if="$vuetify.breakpoint.mdAndUp==true">
               브로넥스가 스마트 팩토리 시장을 이끕니다.
+            </div>
+            <div v-if="$vuetify.breakpoint.mdAndUp==false">
+              브로넥스의 솔루션을 도입하고 공장을 최적화하세요
+            </div>
           </v-col>
       </v-row>
   </div>

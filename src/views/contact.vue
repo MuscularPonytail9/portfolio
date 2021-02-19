@@ -123,6 +123,8 @@
         <v-btn
           outlined
           style="margin-left: 40%;"
+          id="btn_margin"
+          @click="submit"
         >
         문의하기
         </v-btn>
@@ -262,13 +264,31 @@
 
 <script>
 import txtimg from '@/components/txtimg'
+// import {send} from '@/node-mailer.js'
+
 export default {
   components: {
     txtimg
   }, 
   data: () => ({
+
       items: ['MES', 'ERP', 'PDM', 'HMI','지능형 RPA', 'AI 검사', '테스트 자동화','환경 구축', '서비스 모니터링', '기타'],
-    }),
+      email: {
+        "host": "smtp.mailtrap.io",
+        "port": 2525,
+        "secure": false,
+        "auth": {
+            "user": "f08c39c72a078b",
+            "pass": "0431d0eaa5448c",
+        }
+      },
+      content: {
+        from: "whalsrnwkd@naver.com",
+        to: "02b87e7823-415ae0@inbox.mailtrap.io",
+        subject: "test1",
+        text: "test2",
+      }
+  }),
 }
 </script>
 

@@ -52,6 +52,10 @@
           v-model="group"
           active-class="text--accent-4"
         >
+          <v-list-item to='/'>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
           <v-list-item to='/solutionSF'>
             <v-list-item-title>Smart Factory</v-list-item-title>
           </v-list-item>
