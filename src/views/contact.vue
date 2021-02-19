@@ -125,7 +125,8 @@
           id="btn_margin"
         >
         문의하기
-        </v-btn><br><br>
+        </v-btn>
+    <div style="margin: 10%"></div>
     </div>
 </template>
 
@@ -186,6 +187,6 @@ export default {
   border-bottom: 1px solid black;
 }
 #btn_margin {
-margin-left: 43%;
+margin-left: 47%;
 }
 </style>
