@@ -50,7 +50,7 @@
                         스마트 팩토리 구축으로 손쉬운 제어와 다양한 이점을 얻으세요<br>
                       </div>
                       <v-card tile flat height="60" color="transparent"></v-card>
-                      <v-img src="@/assets/images/s1.jpg" height="400"></v-img>
+                      <v-img src="@/assets/images/s1.jpg" aspect-ratio="3"></v-img>
                   </v-card>
               </v-col>
             </v-row>
@@ -238,12 +238,9 @@
             <br><br><br><br><br>
         </div>
         <div v-if="$vuetify.breakpoint.mdAndUp==false">
-          <v-img src="@/assets/images/s2.jpg" aspect-ratio="1.7778" class="d-flex align-end">
-            <v-row no-gutters>
-              <v-col offset="1">
-                <v-card flat tile width="100%" height="40px"></v-card>
-              </v-col>
-            </v-row>
+          <v-img src="@/assets/images/s2.jpg" aspect-ratio="1.7778">
+              <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
+              <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
           <v-col offset="1">
             <v-card flat tile class="mr-16">
@@ -251,12 +248,9 @@
               <div style="font-size: 17px" class="ml-4">MES는 제품 생산 과정을 최적화할 수 있도록 정보를 제공하며, 실시간 데이터로 공장활동을 지시 및 보고하여 의사결정에 도움을 주는 시스템입니다.</div>
             </v-card>
           </v-col>
-          <v-img src="@/assets/images/s3.jpg" aspect-ratio="1.7778" class="d-flex align-end">
-            <v-row no-gutters>
-              <v-col offset="1">
-                <v-card flat tile width="100%" height="40px"></v-card>
-              </v-col>
-            </v-row>
+          <v-img src="@/assets/images/s3.jpg" aspect-ratio="1.7778">
+              <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
+              <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
           <v-col offset="1">
             <v-card flat tile class="mr-16">
@@ -264,12 +258,9 @@
               <div style="font-size: 17px" class="ml-4">조직들이 회계, 조달, 프로젝트 관리 및 제조등 일상 업무 활동을 관리하기 위해 사용하는 시스템 및 소프트웨어 패키지를 의미합니다.</div>
             </v-card>
           </v-col>
-          <v-img src="@/assets/images/s4.jpg" aspect-ratio="1.7778" class="d-flex align-end">
-            <v-row no-gutters>
-              <v-col offset="1">
-                <v-card flat tile width="100%" height="40px"></v-card>
-              </v-col>
-            </v-row>
+          <v-img src="@/assets/images/s4.jpg" aspect-ratio="1.7778">
+              <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
+              <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
           <v-col offset="1">
             <v-card flat tile class="mr-16">
@@ -277,12 +268,9 @@
               <div style="font-size: 17px" class="ml-4">소프트웨어를 사용하여 제품 데이터 및 프로세스 관련 정보를 단일한 중앙 시스템에서 관리하는 것입니다.</div>
             </v-card>
           </v-col>
-          <v-img src="@/assets/images/s5.jpg" aspect-ratio="1.7778" class="d-flex align-end">
-            <v-row no-gutters>
-              <v-col offset="1">
-                <v-card flat tile width="100%" height="40px"></v-card>
-              </v-col>
-            </v-row>
+          <v-img src="@/assets/images/s5.jpg" aspect-ratio="1.7778">
+              <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
+              <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
           <v-col offset="1">
             <v-card flat tile class="mr-16">
@@ -323,6 +311,9 @@ export default {
   position: sticky;
   top: 170px;
   z-index: 99999;
+}
+.cardpos {
+  margin-bottom: 0;
 }
 
 </style>

@@ -3,34 +3,28 @@
       <v-card flat tile width="100%" height="600" :id="id" v-if="$vuetify.breakpoint.lgAndUp==true">
         <v-expand-transition>
           <v-card v-show="expand" flat tile height="100%" width="100%">
-          <v-row no-gutters>          
-            <v-col offset="2" cols="4" class="mt-12">
-                <v-card flat tile width="380" class="mt-12">
-                    <v-card-text class="mt-12">
-                        <div style="font-size: 40px">{{ title }}</div> <br><br>
-                        <div style="font-size: 20px">{{ txt }}</div>
-                    </v-card-text>
+          <v-row no-gutters class="d-flex align-center">          
+            <v-col offset="2" cols="4">
+                <v-card flat tile width="auto" height="auto">                   
+                        <v-img :src="require(`@/assets/images/${txtsource}`)"></v-img>
                 </v-card>
             </v-col>
-            <v-col cols="6">
+            <v-col  cols="6">
                 <v-img :src="require(`@/assets/images/${source}`)" width="100%" height="600"></v-img>
             </v-col>
           </v-row>
           </v-card>
         </v-expand-transition>           
       </v-card>
-      <v-card flat tile width="100%" height="500" :id="id" v-if="$vuetify.breakpoint.lgAndUp==false">
-        <v-expand-transition>
-            <v-card v-show="expand" flat tile height="100%" width="100%">
+      <v-card flat tile width="100%" height="100%" v-if="$vuetify.breakpoint.lgAndUp==false">
+            <v-card flat tile height="100%" width="100%">
                 <v-img :src="require(`@/assets/images/${source}`)" width="100%" height="300"></v-img>
-                <v-card flat tile width="auto" class="mt-4 ml-1">
-                    <v-card-text>
-                        <div style="font-size: 40px">{{ title }}</div> <br><br>
-                        <div style="font-size: 20px">{{ txt }}</div>
-                    </v-card-text>
-                </v-card>
+                <v-row>
+                    <v-col cols="12">
+                        <v-img :src="require(`@/assets/images/${txtsource}`)"></v-img>
+                    </v-col>
+                </v-row>
             </v-card>
-        </v-expand-transition>
       </v-card>
   </div>
 </template>
@@ -40,8 +34,7 @@ export default {
     props: {
         id: String,
         source: String,
-        title: String,
-        txt: String,
+        txtsource: String
     },
     data() {
         return {
@@ -70,5 +63,9 @@ export default {
 </script>
 
 <style>
-
+#titleSt {
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+}
 </style>
