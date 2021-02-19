@@ -1,4 +1,5 @@
-const nodemailer = require("nodemailer");
+
+const nodemailer = require('nodemailer');
 
 const email = {
     "host": "smtp.mailtrap.io",
@@ -6,7 +7,7 @@ const email = {
     "secure": false,
     "auth": {
         "user": "f08c39c72a078b",
-        "password": "0431d0eaa5448c",
+        "pass": "0431d0eaa5448c",
     }
 }
 
@@ -20,12 +21,13 @@ const send = async (data) => {
     });
 };
 
-const content = {
-    from: "whalsrnwkd@naver.com",
-    to: "02b87e7823-415ae0@inbox.mailtrap.io",
-    subject: "test1",
-    text: "test2",
+// const content = {
+//     from: "whalsrnwkd@naver.com",
+//     to: "02b87e7823-415ae0@inbox.mailtrap.io",
+//     subject: "test1",
+//     text: "test2",
 
-};
+// };
 
-send(content);
+export {send}
+// send(content);

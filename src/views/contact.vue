@@ -123,6 +123,7 @@
           color="accent"
           outlined
           id="btn_margin"
+          @click="submit"
         >
         문의하기
         </v-btn>
@@ -132,13 +133,35 @@
 
 <script>
 import txtimg from '@/components/txtimg'
+// import {send} from '@/node-mailer.js'
+
 export default {
   components: {
     txtimg
   }, 
   data: () => ({
       items: ['Smart Factory', 'MES', 'ERP', 'PDM', 'HMI'],
-    }),
+      email: {
+        "host": "smtp.mailtrap.io",
+        "port": 2525,
+        "secure": false,
+        "auth": {
+            "user": "f08c39c72a078b",
+            "pass": "0431d0eaa5448c",
+        }
+      },
+      content: {
+        from: "whalsrnwkd@naver.com",
+        to: "02b87e7823-415ae0@inbox.mailtrap.io",
+        subject: "test1",
+        text: "test2",
+      }
+  }),
+  // methods: {
+  //   submit() {
+  //     send(`${this.content}`)
+  //   }
+  // }
 }
 </script>
 
