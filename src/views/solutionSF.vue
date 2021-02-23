@@ -46,7 +46,7 @@
             <v-row>
               <v-col offset="2" cols="8" class="mt-12">
                   <v-card tile flat width="100%" height="100%" color="transparent" class="mt-12">
-                      <div style="font-size: 40px">
+                      <div style="font-size: 39px">
                         스마트 팩토리 구축으로 손쉬운 제어와 다양한 이점을 얻으세요<br>
                       </div>
                       <v-card tile flat height="60" color="transparent"></v-card>
@@ -111,7 +111,7 @@
               </v-col>
             </div>
         </v-card>
-        <br><br><br><br><br><br>
+          <div style="margin-bottom: 15%"></div>
         
         <div v-if="$vuetify.breakpoint.mdAndUp==true">
           <v-col offset="1" cols="10">
@@ -142,11 +142,11 @@
             <v-img src="@/assets/images/mes.png"></v-img>
           </v-col>
 
-          <br><br><br>
+          <div style="margin-bottom: 15%"></div>
     
             <v-col offset="2">
               <v-card flat tile height="160px" class="ml-16">
-                  <div class="grey--text mr-4" style="font-size: 110px;">02</div>
+                  <div class="grey--text mr-4" style="font-size: 110px;" id="offset2">02</div>
                 </v-card>
               <v-img src="@/assets/images/s3.jpg" eager position='bottom 50px right 180px' width="1100" height="600" id="offset2">
                 <v-row>
@@ -174,7 +174,7 @@
             <v-img src="@/assets/images/erp.png"></v-img>
           </v-col>
 
-          <br><br><br>
+          <div style="margin-bottom: 15%"></div>
 
           <v-col offset="3">
             <v-img src="@/assets/images/s4.jpg" position='bottom 50px left 180px' width="1100" height="600" id="offset3">
@@ -203,11 +203,11 @@
             <v-img src="@/assets/images/pdm.png"></v-img>
           </v-col>
 
-          <br><br><br>
+          <div style="margin-bottom: 15%"></div>
 
           <v-col offset="2">
               <v-card flat tile height="160px" class="ml-16">
-                  <div class="grey--text mr-4" style="font-size: 110px;">04</div>
+                  <div class="grey--text mr-4" style="font-size: 110px;" id="offset4">04</div>
                 </v-card>
               <v-img src="@/assets/images/s5.jpg" eager position='bottom 50px right 180px' width="1100" height="600" id="offset4">
                 <v-row>
@@ -235,7 +235,7 @@
             <v-img src="@/assets/images/hmi.png"></v-img>
           </v-col>
 
-            <br><br><br><br><br>
+          <div style="margin-bottom: 15%"></div>
         </div>
         <div v-if="$vuetify.breakpoint.mdAndUp==false">
           <v-img src="@/assets/images/s2.jpg" aspect-ratio="1.7778">
