@@ -4,9 +4,9 @@
 <div v-if="$vuetify.breakpoint.lgAndUp==true">
     <div style="padding:10% 0 0 10%;">
           <h1 style="font-weight: bold; font-size: 30px">인재상</h1><br>
-          <v-card width="85%" hegiht="110%" elevation="0" style="margin-top:3%; margin-bottom: 5%; margin-top: 5%; margin-bottom: 10%">
+          <v-card width="85%" elevation="0" style="margin-top: 5%; margin-bottom: 5%">
             <v-layout row wrap>
-            <v-card class=" text-center" width="30%" style="padding:2%">
+            <v-card class=" text-center" width="30%" style="padding:2% 2% 0 2%">
               <v-img :src="require(`@/assets/images/passion.png`)" height="50%" ></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 200%;">Passion</div>
@@ -14,8 +14,8 @@
               열정으로 최고에 도전하는 사람</div>
               </v-card></v-card>
               <div style="margin-left: 4%"></div>
-            <v-card class=" text-center" width="30%" style="padding: 2% 2% 9% 2%;">
-            <v-img :src="require(`@/assets/images/professionalism.png`)" style="padding: 18% 0% 4% 0;" height="57.5%"></v-img>
+            <v-card class=" text-center" width="30%" style="padding: 2% 2% 0 2%;">
+            <v-img :src="require(`@/assets/images/professionalism.png`)" style="padding: 18% 0% 0% 0;" height="50%"></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 200%;">Professionalism</div>
               <div style="font-size: 150%;">끊임없는 혁신과 창의적인 아이디어를
@@ -23,8 +23,8 @@
               최고의 가치를 제공하는 사람</div>
               </v-card></v-card>
               <div style="margin-left: 4%"></div>
-            <v-card class=" text-center" width="30%" style="padding:3%">
-            <v-img :src="require(`@/assets/images/teamwork.png`)" height="50%"></v-img>
+            <v-card class=" text-center" width="30%" style="padding: 2% 2% 0 2%;">
+            <v-img :src="require(`@/assets/images/Teamwork.png`)" height="50%"></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 200%;">Teamwork</div>
               <div style="font-size: 150%; padding: 0 0 9.5% 0">상호존중과 신뢰를 기반으로 서로의 힘을
@@ -64,7 +64,7 @@
           <h1 style="font-weight: bold; font-size: 30px">인재상</h1><br>
           <v-card width="85%" hegiht="110%" elevation="0" style="margin-top:3%; margin-bottom: 5%; margin-top: 5%; margin-bottom: 10%">
             <v-layout row wrap>
-            <v-card class=" text-center" width="30%" style="padding:2%">
+            <v-card class=" text-center" width="30%" style="padding: 2% 2% 0 2%;">
               <v-img :src="require(`@/assets/images/passion.png`)" height="50%" ></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 175%;">Passion</div>
@@ -72,8 +72,8 @@
               열정으로 최고에 도전하는 사람</div>
               </v-card></v-card>
               <div style="margin-left: 4%"></div>
-            <v-card class=" text-center" width="30%" style="padding: 2% 2% 9% 2%;">
-            <v-img :src="require(`@/assets/images/professionalism.png`)" style="padding: 18% 0% 4% 0;" height="55.8%"></v-img>
+            <v-card class=" text-center" width="30%" style="padding: 2% 2% 0 2%;">
+            <v-img :src="require(`@/assets/images/professionalism.png`)" style="padding: 18% 0% 4% 0;" height="50%"></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size:175%;">Professionalism</div>
               <div style="font-size: 140%;">끊임없는 혁신과 창의적인 아이디어를
@@ -81,8 +81,8 @@
               최고의 가치를 제공하는 사람</div>
               </v-card></v-card>
               <div style="margin-left: 4%"></div>
-            <v-card class=" text-center" width="30%" style="padding:3%">
-            <v-img :src="require(`@/assets/images/teamwork.png`)" height="50%"></v-img>
+            <v-card class=" text-center" width="30%" style="padding: 2% 2% 0 2%;">
+            <v-img :src="require(`@/assets/images/Teamwork.png`)" height="50%"></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 175%;">Teamwork</div>
               <div style="font-size: 140%; padding: 0 0 9.5% 0">상호존중과 신뢰를 기반으로 서로의 힘을
@@ -140,7 +140,7 @@
               </v-card></v-card>
               <div style="margin-left: 5%"></div>
             <v-card class=" text-center" width="80%" style="padding:2%; margin-bottom:10%">
-            <v-img :src="require(`@/assets/images/teamwork.png`)"></v-img>
+            <v-img :src="require(`@/assets/images/Teamwork.png`)"></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 170%;">Teamwork</div><br>
 
@@ -199,7 +199,7 @@
               </v-card></v-card>
               <div style="margin-left: 5%"></div>
             <v-card class=" text-center" width="90%" style="padding:2%; margin-bottom:10%">
-            <v-img :src="require(`@/assets/images/teamwork.png`)"></v-img>
+            <v-img :src="require(`@/assets/images/Teamwork.png`)"></v-img>
               <v-card elevation="0">
               <div style="font-weight: bold; font-size: 170%;">Teamwork</div><br>
 
