@@ -115,7 +115,6 @@
               </v-row>
             </v-img>
           </v-col>
-
           <v-col offset="2" cols="8">
             <v-img src="@/assets/images/jnhrpa.png"></v-img>
           </v-col>

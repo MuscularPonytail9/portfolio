@@ -1,3 +1,20 @@
+ years: [
+        {
+          color: 'cyan',
+          year: '2016',
+        },
+        {
+          color: 'green',
+          year: '2017',
+        },
+        {
+          color: 'pink',
+          year: '2018',
+        },
+        {
+          color: 'amber',
+          year: '2019',
+        },
 <template>
     <div>
         <txtimg name="Company" source="company.jpg" ></txtimg>
@@ -6,7 +23,7 @@
             <v-row>
               <v-card color="transparent" tile flat height="0" style="margin-top: 10%"></v-card>
             </v-row>
-              <div class="grey lighten-4" style="padding: 0 0 22% 0">
+              <div class="grey lighten-4" style="padding: 0 0 5% 0">
                         <div style="padding:10% 0 3% 0%; font-size:41pt; text-align:center;">우리의 노력이 당신의 힘이 되기에 "The work we love"</div>
             <v-row>
               <v-col offset="3" style="margin-bottom:10%; margin-top:5%;">
@@ -36,9 +53,12 @@
       <v-slider
       vertical
       height="600px"
-      color="black"
+      width="0px"
       style="font-weight: bold;"
       v-model="model"
+      :color="color"
+      :track-color="track_color"
+      :thumb-color="thumb_color"
       :max="rounded.length-1"
       :tick-labels="rounded"
       background-color="rgba(0,0,0,0)"
@@ -118,7 +138,7 @@ frameborder="0" style="border:0; padding:0 0 0 15%;" allowfullscreen="" aria-hid
             <v-row>
               <v-card color="transparent" tile flat height="0" style="margin-top: 10%"></v-card>
             </v-row>
-              <div class="grey lighten-4" style="padding: 0 0 22% 0">
+              <div class="grey lighten-4" style="padding: 0 0 5% 0">
                         <div style="padding:10% 0 3% 0%; font-size:190%; text-align:center;">우리의 노력이 당신의 힘이 되기에 "The work we love"</div>
             <v-row>
               <v-col offset="3" style="margin-bottom:10%; margin-top:5%;">
@@ -147,9 +167,11 @@ frameborder="0" style="border:0; padding:0 0 0 15%;" allowfullscreen="" aria-hid
       <v-slider
       vertical
       height="600px"
-      color="black"
       style="font-weight: bold"
       v-model="model"
+      :color="color"
+      :track-color="track_color"
+      :thumb-color="thumb_color"
       :max="rounded.length-1"
       :tick-labels="rounded"
       background-color="rgba(0,0,0,0)"
@@ -224,7 +246,8 @@ KPI(폴란드/해외) MES 시스템 구축 완료<br>
 17JeQ7J207Iqk7ZWY7J207JeU65Oc7YOA7JuM!5e0!3m2!1sko!2skr!4v1612774230431!5m2!1sko!2skr" width="85%" height="600" 
 frameborder="0" style="border:0; padding:0 0 0 15%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div style="margin: 3 0%"></div>
-</div> </div>
+</div>
+     </div>
 </template>
 
 <script>
@@ -243,25 +266,11 @@ export default {
         '2018',
         '2017',
         '2016',
-      ], years: [
-        {
-          color: 'cyan',
-          year: '2016',
-        },
-        {
-          color: 'green',
-          year: '2017',
-        },
-        {
-          color: 'pink',
-          year: '2018',
-        },
-        {
-          color: 'amber',
-          year: '2019',
-        },
       ],
-  }),
+      color: 'grey lighten-3',
+      track_color: 'grey lighten-3',
+      thumb_color: 'black',
+      }),
 }
 </script>
 

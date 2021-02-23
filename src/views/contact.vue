@@ -2,9 +2,9 @@
     <div>
         <txtimg name="Contact" source="contact.jpg" ></txtimg><br>
         <div v-if="$vuetify.breakpoint.mdAndUp==true">
-        <h1 style="font-weight: bold; font-size: 30px; padding:10% 0 0 12.5%">서비스 문의하기</h1><br>
-        <h3 style="padding:5% 0 0 12.5%">궁금하신 사항은 언제든 문의해 주세요.</h3>
-        <div style="font-size: 20px; padding:0 0 0 12.5%">
+        <h1 style="font-weight: bold; font-size: 30px; padding:10% 12.5% 0 12.5%">서비스 문의하기</h1><br>
+        <h3 style="padding:5% 0=12.5% 0 12.5%">궁금하신 사항은 언제든 문의해 주세요.</h3>
+        <div style="font-size: 20px; padding:0 12.5% 0 12.5%">
         <p>브로넥스에서 제공하는 서비스에 대한 문의를 아래 양식에 맞게 작성하여 문의 하시면 24시간 이내에 친절하게 답변드리겠습니다.</p>
         <p>문의전화: 031) 306-0426/ 운영시간 오전 9시 ~ 오후 6시 (주말 및 공휴일 제외)</p>
         <li>문의에 대한 답변은 24시간 이내에 남겨주신 연락처로 안내 전화 및 메일을 보내드립니다.</li>
@@ -122,7 +122,7 @@
         </v-row><br>
         <v-btn
           outlined
-          style="margin-left: 40%;"
+          style="margin-left: 42%;"
           id="btn_margin"
           @click="submit"
         >
@@ -132,22 +132,22 @@
     </div>
     
     <div v-if="$vuetify.breakpoint.mdAndUp==false">
-        <h1 style="font-weight: bold; font-size: 30px; padding:10% 0 0 10%">서비스 문의하기</h1><br>
-        <h3 style="padding:5% 0 0 10%">궁금하신 사항은 언제든 문의해 주세요.</h3>
-        <div style="font-size: 20px; padding:0 0 0 10%">
+        <h1 style="font-weight: bold; font-size: 190%; padding:10% 10% 0 10%">서비스 문의하기</h1><br>
+        <h3 style="padding:5% 10% 0 10%">궁금하신 사항은 언제든 문의해 주세요.</h3>
+        <div style="font-size: 100%; padding:0 10% 0 10%">
         <p>브로넥스에서 제공하는 서비스에 대한 문의를 아래 양식에 맞게 작성하여 문의 하시면 24시간 이내에 친절하게 답변드리겠습니다.</p>
         <p>문의전화: 031) 306-0426/ 운영시간 오전 9시 ~ 오후 6시 (주말 및 공휴일 제외)</p>
         <li>문의에 대한 답변은 24시간 이내에 남겨주신 연락처로 안내 전화 및 메일을 보내드립니다.</li>
         <li>고객님의 소중한 정보에 대해 비공개에 의한 신분 보장을 약속합니다.</li></div><br>
-        <h1  style="padding:8% 0 5% 10%">문의하기</h1>
-        <v-row no-gutters  style="padding:0 0 5% 10%">
+        <h1 style="padding:8% 10% 5% 10%">문의하기</h1>
+        <v-row no-gutters  style="padding:0 10% 5% 10%">
           <template v-for="n in 14">
             <v-col :key="n" :cols="n%2 === 0 ? 8 : 3" >
               <v-card
                 class="text-center"
                 tile
                 elevation="0"
-                style="font-size:20px"
+                style="font-size:120%"
               >
                 <div v-if="n === 1" id="grid_left_first">
                   서비스
@@ -252,7 +252,7 @@
         </v-row><br>
         <v-btn
           outlined
-          style="margin-left: 37%;"
+          style="margin-left: 40%;"
         >
         문의하기
         </v-btn>
