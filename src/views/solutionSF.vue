@@ -114,8 +114,8 @@
           <div style="margin-bottom: 15%"></div>
         
         <div v-if="$vuetify.breakpoint.mdAndUp==true">
-          <v-col offset="1" cols="10">
-            <v-img src="@/assets/images/s2.jpg" position='bottom 50px right 230px' width="1100" height="600" id="offset1">
+          <v-col offset="1" cols="10" id="offset1">
+            <v-img src="@/assets/images/s2.jpg" position='bottom 50px right 230px' width="1100" height="600">
               <v-row>
                 <v-card color="transparent" flat tile height="220px"></v-card>
               </v-row>
@@ -176,8 +176,8 @@
 
           <div style="margin-bottom: 15%"></div>
 
-          <v-col offset="3">
-            <v-img src="@/assets/images/s4.jpg" position='bottom 50px left 180px' width="1100" height="600" id="offset3">
+          <v-col offset="3" id="offset3">
+            <v-img src="@/assets/images/s4.jpg" position='bottom 50px left 180px' width="1100" height="600">
               <v-row>
                 <v-card color="transparent" flat tile height="140px"></v-card>
               </v-row>
@@ -206,8 +206,8 @@
           <div style="margin-bottom: 15%"></div>
 
           <v-col offset="2">
-              <v-card flat tile height="160px" class="ml-16">
-                  <div class="grey--text mr-4" style="font-size: 110px;" id="offset4">04</div>
+              <v-card flat tile height="160px" class="ml-16" id="offset4">
+                  <div class="grey--text mr-4" style="font-size: 110px;">04</div>
                 </v-card>
               <v-img src="@/assets/images/s5.jpg" eager position='bottom 50px right 180px' width="1100" height="600" id="offset4">
                 <v-row>
