@@ -1,6 +1,6 @@
 <template>
   <div>
-      <v-card color="grey lighten-4"  absolute>
+      <v-card color="grey lighten-4"  elevation="0" absolute style="padding: 0 0 10% 0">
       <v-row>
         <v-card flat tile color="transparent" class="text-center" width="100%">
         <v-card-text>
@@ -76,31 +76,25 @@
       </v-row>
       <v-row no-gutters v-if="$vuetify.breakpoint.xs==true">
         <v-col cols="3">
-          <v-btn elevation="0" to='/' class="mt-4">
+          <v-btn elevation="0" to='/' class="mt-4" style="margin-left: 120%; margin-bottom: 50%" width="150%">
               <v-img src="@/assets/images/bnx.png" width="100%" height="100%"></v-img>
           </v-btn>
         </v-col>
-        <v-col offset="2" cols="7">
-          <v-card height="auto" flat tile color="transparent">
+          <v-card height="auto" flat tile color="transparent"> 
             <v-row no-gutters>
-              <v-col cols="5">
-                <v-card flat tile color="transparent">
+                <v-card flat tile color="transparent" style="margin-left: 4%">
                   대표번호 : 031)306-0426
                 </v-card>
-              </v-col>
-              <v-col cols="6">
-                <v-card flat tile color="transparent">
+                <v-card flat tile color="transparent" style="margin-left: 4%">
                   주소 : 경기도 수원시 영통구 영통로 237 에이스하이엔드타워 영통 제 5층 510호,511호
                 </v-card>
-              </v-col>
             </v-row>
             <v-row no-gutters>
-              <v-card flat tile color="transparent" height="50px">
+              <v-card flat tile color="transparent" height="50px" style="margin-left: 4%">
                 © Copyright(c) 2019 BroaNex All rights reserved. Since 2016
               </v-card>
             </v-row>
           </v-card>
-        </v-col>
       </v-row>
     </v-card>
   </div>

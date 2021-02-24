@@ -115,7 +115,7 @@
         
         <div v-if="$vuetify.breakpoint.mdAndUp==true">
           <v-col offset="1" cols="10" id="offset1">
-            <v-img src="@/assets/images/s2.jpg" position='bottom 50px right 230px' width="1100" height="600">
+            <v-img src="@/assets/images/s2.jpg" position='bottom 50px right 230px' width="900" height="600">
               <v-row>
                 <v-card color="transparent" flat tile height="220px"></v-card>
               </v-row>
@@ -242,42 +242,34 @@
               <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
               <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
-          <v-col offset="1">
-            <v-card flat tile class="mr-16">
-              <div style="font-size: 24px" class="ml-4">MES<br></div>
+            <v-card flat tile class="mr-16" style="margin-left: 10%;">
+              <div style="font-size: 24px;" class="ml-4">MES<br></div>
               <div style="font-size: 17px" class="ml-4">MES는 제품 생산 과정을 최적화할 수 있도록 정보를 제공하며, 실시간 데이터로 공장활동을 지시 및 보고하여 의사결정에 도움을 주는 시스템입니다.</div>
             </v-card>
-          </v-col>
           <v-img src="@/assets/images/s3.jpg" aspect-ratio="1.7778">
               <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
               <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
-          <v-col offset="1">
-            <v-card flat tile class="mr-16">
+            <v-card flat tile class="mr-16" style="margin-left: 10%;">
               <div style="font-size: 24px" class="ml-4">ERP<br></div>
               <div style="font-size: 17px" class="ml-4">조직들이 회계, 조달, 프로젝트 관리 및 제조등 일상 업무 활동을 관리하기 위해 사용하는 시스템 및 소프트웨어 패키지를 의미합니다.</div>
             </v-card>
-          </v-col>
           <v-img src="@/assets/images/s4.jpg" aspect-ratio="1.7778">
               <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
               <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
-          <v-col offset="1">
-            <v-card flat tile class="mr-16">
+            <v-card flat tile class="mr-16" style="margin-left: 10%;">
               <div style="font-size: 24px" class="ml-4">PDM<br></div>
               <div style="font-size: 17px" class="ml-4">소프트웨어를 사용하여 제품 데이터 및 프로세스 관련 정보를 단일한 중앙 시스템에서 관리하는 것입니다.</div>
             </v-card>
-          </v-col>
           <v-img src="@/assets/images/s5.jpg" aspect-ratio="1.7778">
               <v-card flat tile width="100%" height="85%" color="transparent"></v-card>
               <v-card flat tile width="93%" height="16%" class="ml-11"></v-card>                              
           </v-img>
-          <v-col offset="1">
-            <v-card flat tile class="mr-16">
+            <v-card flat tile class="mr-16" style="margin-left: 10%;">
               <div style="font-size: 24px" class="ml-4">HMI<br></div>
               <div style="font-size: 17px" class="ml-4">작업자와 설비 간의 인터페이스를 직관적으로 인지하기 쉽게 제공하며, 다양한 설비로부터의 데이터를 수집/형식화/결합 하여 전체 및 세부 설비의 상태 모니터링 및 이력 관리가 가능합니다.</div>
             </v-card>
-          </v-col>
         </div>
     </div>
 </template>
@@ -315,5 +307,4 @@ export default {
 .cardpos {
   margin-bottom: 0;
 }
-
 </style>

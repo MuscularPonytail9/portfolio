@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-carousel hide-delimiters cycle interval=5000 height="900px" >
+    <v-carousel hide-delimiters cycle interval=5000 height="600px" >
       <v-carousel-item 
         v-for="(item,i) in items"
         :key="i"
@@ -8,14 +8,14 @@
       >
         <v-row
         >
-          <v-card color="transparent" tile flat height="600"></v-card>        
+          <v-card color="transparent" tile flat height="370"></v-card>        
         </v-row>
         <v-row>
           <v-col cols="12">
             <v-card flat tile color="transparent" class="text-center">
               <v-card-text>
-                <div style="font-size: 50px;">{{ item.title }}</div><br>
-                <div style="font-size: 18px;">{{ item.txt }}</div>
+                <div style="font-size: 43px;">{{ item.title }}</div><br>
+                <div style="font-size: 16px;">{{ item.txt }}</div>
               </v-card-text>
             </v-card>
           </v-col>

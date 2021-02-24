@@ -26,7 +26,7 @@
       </v-img>
       
     
-    <v-card-title>
+    <v-card-title style=" font-size: 1.22rem">
           {{ item.title }}     
       </v-card-title>
 

@@ -1,7 +1,6 @@
 <template>
 <div>
       <v-app-bar dense app flat hide-on-scroll height="50" id="navbar" v-if="$vuetify.breakpoint.mdAndUp==true">
-        <v-spacer></v-spacer>
           <v-toolbar-title>
               <v-btn elevation="0" to='/'>
                   <v-img src="@/assets/images/bnx1.png" width="25px" height="34px"></v-img>
