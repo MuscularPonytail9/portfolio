@@ -82,15 +82,15 @@
         </v-col>
           <v-card height="auto" flat tile color="transparent"> 
             <v-row no-gutters>
-                <v-card flat tile color="transparent" style="margin-left: 4%">
+                <v-card flat tile color="transparent" style="margin-left: 4%; margin-right: 2%">
                   대표번호 : 031)306-0426
                 </v-card>
-                <v-card flat tile color="transparent" style="margin-left: 4%">
+                <v-card flat tile color="transparent" style="margin-left: 4%; margin-right: 2%">
                   주소 : 경기도 수원시 영통구 영통로 237 에이스하이엔드타워 영통 제 5층 510호,511호
                 </v-card>
             </v-row>
             <v-row no-gutters>
-              <v-card flat tile color="transparent" height="50px" style="margin-left: 4%">
+              <v-card flat tile color="transparent" height="50px" style="margin-left: 4%; margin-right: 2%">
                 © Copyright(c) 2019 BroaNex All rights reserved. Since 2016
               </v-card>
             </v-row>
