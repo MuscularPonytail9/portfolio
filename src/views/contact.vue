@@ -29,6 +29,7 @@
                     :items="items"
                     dense
                     outlined
+                    v-model="service"
                     ></v-select>
                   </v-col>
 
@@ -43,6 +44,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="company"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -56,6 +58,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="manager"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -69,6 +72,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="tel"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -82,6 +86,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="email"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -95,6 +100,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="title"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -108,6 +114,7 @@
                       persistent-hint
                       outlined
                       height="138"
+                      v-model="content"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -124,7 +131,7 @@
           outlined
           style="margin-left: 42%;"
           id="btn_margin"
-          @click="submit"
+          @click="sendEmail"
         >
         문의하기
         </v-btn>
@@ -159,6 +166,7 @@
                     :items="items"
                     dense
                     outlined
+                    v-model="service"
                     ></v-select>
                   </v-col>
 
@@ -186,6 +194,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="manager"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -199,6 +208,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="tel"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -212,6 +222,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="email"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -225,6 +236,7 @@
                       persistent-hint
                       outlined
                       dense
+                      v-model="title"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -238,6 +250,7 @@
                       persistent-hint
                       outlined
                       height="138"
+                      v-model="content"
                     ></v-text-field>
                   </v-col>
                 </div>
@@ -253,6 +266,7 @@
         <v-btn
           outlined
           style="margin-left: 40%;"
+          @click="sendEmail"
         >
         문의하기
         </v-btn>
@@ -264,6 +278,7 @@
 
 <script>
 import txtimg from '@/components/txtimg'
+import emailjs from 'emailjs-com'
 // import {send} from '@/node-mailer.js'
 
 export default {
@@ -273,22 +288,39 @@ export default {
   data: () => ({
 
       items: ['MES', 'ERP', 'PDM', 'HMI','지능형 RPA', 'AI 검사', '테스트 자동화','환경 구축', '서비스 모니터링', '기타'],
-      email: {
-        "host": "smtp.mailtrap.io",
-        "port": 2525,
-        "secure": false,
-        "auth": {
-            "user": "f08c39c72a078b",
-            "pass": "0431d0eaa5448c",
-        }
-      },
-      content: {
-        from: "whalsrnwkd@naver.com",
-        to: "02b87e7823-415ae0@inbox.mailtrap.io",
-        subject: "test1",
-        text: "test2",
-      }
+      service: "",
+      company: "",
+      manager: "",
+      tel: "",
+      email: "",
+      title: "",
+      content: "",
   }),
+  methods: {
+    sendEmail () {
+      console.log(1)
+      emailjs.send('service_21eq7z6', 'template_huvhwzp', {
+        service: this.service,
+        company: this.company,
+        manager: this.manager,
+        tel: this.tel,
+        email: this.email,
+        title: this.title,
+        content: this.content,
+      }, "user_VhQkkXAh0v2D8UyNqb3Gv").then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+      this.service = ""
+      this.company = ""
+      this.manager = ""
+      this.tel = ""
+      this.email = ""
+      this.title = ""
+      this.content = ""
+    }
+  },
 }
 </script>
 
